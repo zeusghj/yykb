@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="headCell" id="s1x-jO-EkQ" customClass="ResReuseCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="24"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="今日推荐" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pH5-kJ-DRn">
+                    <rect key="frame" x="24" y="1" width="121" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="121" id="msT-So-TVy"/>
+                        <constraint firstAttribute="width" secondItem="pH5-kJ-DRn" secondAttribute="height" multiplier="121:21" id="rXM-49-NSF"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eLg-xu-riX">
+                    <rect key="frame" x="5" y="2" width="10" height="20"/>
+                    <color key="backgroundColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstItem="pH5-kJ-DRn" firstAttribute="leading" secondItem="s1x-jO-EkQ" secondAttribute="leading" constant="24" id="79b-4X-AXC"/>
+                <constraint firstItem="pH5-kJ-DRn" firstAttribute="top" secondItem="s1x-jO-EkQ" secondAttribute="top" constant="1" id="KmV-a4-FBa"/>
+                <constraint firstAttribute="bottom" secondItem="pH5-kJ-DRn" secondAttribute="bottom" constant="2" id="ekj-0r-AOC"/>
+            </constraints>
+            <connections>
+                <outlet property="titleLabel" destination="pH5-kJ-DRn" id="rmu-zz-sPP"/>
+            </connections>
+            <point key="canvasLocation" x="238" y="224"/>
+        </collectionReusableView>
+    </objects>
+</document>
